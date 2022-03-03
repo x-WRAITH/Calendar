@@ -1,0 +1,138 @@
+/*/                     /*/
+/*     WCode(Wraith)     */
+/*      GramySe.pl       */
+/*/                     /*/
+:root {
+    --gramyse-color: #1ba489;
+    --gramyse-light-gray: #111823;
+    --gramyse-dark-gray: #0a0f16;}
+
+html {
+  padding-top: 80px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--gramyse-dark-gray);}
+
+.body{font-size: 1em;}
+
+.allrights {
+  padding-top: 100px;
+  font-size: 62.5%;
+  color: var(--gramyse-color);
+  text-align: center;}
+
+.htext {
+  color: var(--gramyse-color);
+  text-align: center;}
+
+.hour {font-size: 25px;}
+
+/*Calendar CSS*/
+
+/*Class*/
+
+.global {
+  margin: 15px;
+}
+
+.calendar {
+  background: var(--gramyse-light-gray);
+  margin: 0 auto;
+  padding: 15px;
+  max-width: 575px;
+  overflow: auto;}
+
+.jump-calendar {
+  text-align: center;
+  border-top: 1px solid #dadada;
+  margin-top: 1em;
+  padding: 10px 0;}
+.jump-calendar select{
+  background: var(--gramyse-light-gray);
+  color: lightgray;
+  zoom: 1;
+  border: 1px solid #bfc5c5;
+  border-radius: 3px;
+  padding: 5px 1em;
+  cursor: pointer;} 
+
+.table-calendar{
+  color: lightgray;
+  border-collapse: collapse;
+  width: 100%;}
+.table-calendar td,
+.table-calendar th {
+  text-align: center;
+  vertical-align: top;
+  padding: 5px;}
+
+.data-select:nth-child(7){color: var(--gramyse-color);}
+.data-select:hover:not(.selected){
+  outline: 0.1rem solid gray;
+  cursor: pointer;}
+.selected{
+  font-weight: bold;
+  outline: 1px solid var(--gramyse-color);}
+.holiday {color: #F34A53;}
+td.data-select {width: 200px;}
+
+.previou,
+.next{opacity: 0.5;}
+
+.button-calendar {
+  position: relative;
+  clear: both;}
+.button-calendar button {
+  background: var(--gramyse-color);
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  zoom: 1;
+  color: var(--gramyse-dark-gray);
+  border: 1px solid var(--gramyse-color);
+  border-radius: 4px;
+  padding: 5px 10px;}
+ 
+.events-calendar{
+  background: var(--gramyse-light-gray);
+  margin: 15px auto;
+  padding: 10px;
+  width: 500px;
+  text-align: center;
+  overflow: auto;}
+
+.button-events {
+  position: relative;
+  clear: both;}
+.button-events button {
+  background: var(--gramyse-color);
+  display: inline-block;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  zoom: 1;
+  color: var(--gramyse-dark-gray);
+  border: 1px solid var(--gramyse-color);
+  border-radius: 4px;
+  padding: 5px 50px;}
+
+/*ID*/
+
+#previous {float: left;}
+#next {float: right;}
+
+#days-month{
+  font-size: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dadada;}
+
+#YearAndMonth {
+  text-align: center;
+  font-size: 25px;
+  color: var(--gramyse-color);}
+
+#etext {
+  font-weight: bold;
+  font-size: 15px;
+  color: var(--gramyse-color);}
